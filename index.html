@@ -96,6 +96,16 @@
   </div>
 
   <script>
+
+    function openWhatsApp()
+
+    const phoneNumber = "6126420";
+    const message = "YES!";
+
+     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+     window.open(whatsappURL, '_blank');
+    
     function goToPage2() {
       document.getElementById('page1').classList.remove('active');
       document.getElementById('page2').classList.add('active');
